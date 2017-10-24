@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8" />
+  <meta name='viewport'
+        content='width=device-width, initial-scale=1.0' />
+  <title>Ingrid Hedelin | Front-end Developer in Stockholm</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto%7CRaleway:700"
+        rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="text/javascript" src="index.js" async></script>
+ </head>
+ <body>
+  <header>
+   <nav class="menu section">
+    <a class="nav" href="#">Home</a>
+    <a class="nav" href="#about">About</a>
+    <a class="nav" href="#projects">Projects</a>
+    <a class="nav" href="#contact">Contact</a>
+   </nav>
+   <div class="banner">
+    <h1 class="break">I never give up</h1>
+    <p>— whether it’s climbing a mountain or completing your project</p>
+   </div> <!-- class="banner" -->
+   <div class="presentation">
+    <p>Hello, my name is Ingrid and I'm a Front-end Developer based in
+       Stockholm.</p>
+    <div class="half-circle-bottom" style="background-color:#dfd8d2"></div>
+   </div> <!-- class="presentation" -->
+  </header>
+
+  <section id="about" class="about-container section">
+   <h1 class="section-header">About me</h1>
+   <div class="about-intro">
+    <div class="portrait-wrapper">
+     <img class="portrait" src="./images/portrait.jpg" style="max-width: 350px"
+          alt="Portrait photo of me" />
+    </div> <!-- class="portrait-wrapper" -->
+    <p>Little did I know that the change I desired could be found in coding.
+       In September of 2016 I followed some friends' advice and joined a free,
+       online coding curriculum to try out some front-end coding. I loved it!
+       The problem-solving mindset, the creativity it requires, and the rapid
+       progress in the technology industry really suited me. It turned out to
+       be such a perfect match that I left a stable job in contracts
+       management at a pharmaceutical company in April of 2017 to learn and
+       practise front-end development full-time.</p>
+    <p class="new-p">When I'm not coding I'm likely seeing my friends or
+       family, out running, solving crossword puzzles, reading about sports or current affairs, or out on a hike with my partner. Oh and in most cases
+       you probably find me accompanied by a mug of tea.</p>
+    <p class="new-p">Are you looking to hire? <!-- <a href="#"> Download my
+       resume</a> or --><a href="#contact"> Send me a message!</a> I'd love to see how I can contribute.</p>
+   </div> <!-- class="about-intro" -->
+   <div class="what-skills-wrapper">
+    <div class="about-what">
+     <h2>What I do</h2>
+     <p>My goal is to build functional, fast, and user-friendly websites and
+        apps. Although there are tonnes of great libraries out there I like to
+        keep things simple and not use more than what a project requires. The
+        easiest and quickest option at the time is not always the best in the
+        long run. I believe this approach, together with well-structured code,
+        facilitate easier maintenance of a project. Below you can find my
+        latest work.</p>
+    </div> <!-- class="about-what" -->
+    <div class="about-skills">
+     <h2>What I know</h2>
+     <ul>
+      <li><span>&#10004;</span>HTML5 / CSS3</li>
+      <li><span>&#10004;</span>Responsive design</li>
+      <li><span>&#10004;</span>Bootstrap</li>
+      <li><span>&#10004;</span>SVG</li>
+      <li><span>&#10004;</span>JavaScript / jQuery</li>
+      <li><span>&#10004;</span>ES6 / Babel</li>
+      <li><span>&#10004;</span>React.js / JSX</li>
+      <li><span>&#10004;</span>React Router</li>
+      <li><span>&#10004;</span>webpack</li>
+      <li><span>&#10004;</span>npm</li>
+     </ul>
+    </div> <!-- class="about-skills" -->
+   </div> <!-- class="what-skills-wrapper" -->
+   <div class="half-circle-bottom" style="background-color:#d7cec7"></div>
+  </section>
+
+  <section id="projects" class="project-container section">
+   <h1 class="section-header">Projects</h1>
+   <div class="project-row">
+    <div class="project-wrapper">
+     <div class="img-container">
+      <img class="project-img" src="./images/hiking-site.png"
+           alt="Hiking Trails in Sweden screenshot" />
+      <a href="https://hiking-site-c05cd.firebaseapp.com" target="_blank"
+         rel="noopener">
+       <div class="img-overlay-btn">Visit project site<span>&#10095;</span>
+       </div>
+      </a>
+     </div> <!-- class="img-container" -->
+     <div class="project-text">
+      <h2>Hiking Trails in Sweden</h2>
+      <p>A website for planning hiking trips that is work in progress. As a
+         hiking enthusiast I noticed that there is no good website that provides both an overview of Swedish hiking trails and practical information about them. No API or database with trail information was available so I'm gathering and setting everything up
+         myself. The current version is from October 2017 and
+         <a href="https://github.com/Vocado78/hiking-trails-in-sweden"
+            target="_blank" rel="noopener"> here</a> is the code.</p>
+      <ul class="tags-container">
+       <li class="tags">React.js</li>
+       <li class="tags">React Router</li>
+       <li class="tags">JSX</li>
+       <li class="tags">ES6</li>
+       <li class="tags">Babel</li>
+       <li class="tags">webpack</li>
+       <li class="tags">npm</li>
+       <li class="tags">Google Maps API</li>
+      </ul>
+     </div> <!-- class="project-text" -->
+    </div> <!-- class="project-wrapper" -->
+   </div> <!-- class="project-row" -->
+   <div class="project-row">
+    <div class="project-wrapper">
+     <div class="img-container">
+      <img class="project-img" src="./images/weather-finder.png"
+           alt="Weather Finder screenshot" />
+      <a href="https://weather-finder-1245b.firebaseapp.com" target="_blank"
+         rel="noopener">
+       <div class="img-overlay-btn">Visit project site<span>&#10095;</span>
+       </div>
+      </a>
+     </div> <!-- class="img-container" -->
+     <div class="project-text">
+      <h2>Weather Finder</h2>
+      <p>A SPA (Single Page Application) for finding and viewing the current
+         weather as well as a detailed five-day forecast for any city or town in the world. The project was set-up from scratch (i.e. no use of
+         Create React App) and is an assignment included in a React course
+         I took. The code is found
+         <a href="https://github.com/Vocado78/weather-finder" target="_blank"
+            rel="noopener"> here</a>.</p>
+      <ul class="tags-container">
+       <li class="tags">React.js</li>
+       <li class="tags">React Router</li>
+       <li class="tags">JSX</li>
+       <li class="tags">ES6</li>
+       <li class="tags">Babel</li>
+       <li class="tags">webpack</li>
+       <li class="tags">npm</li>
+       <li class="tags">OpenWeatherMap API</li>
+      </ul>
+     </div> <!-- class="project-text" -->
+    </div> <!-- class="project-wrapper" -->
+   </div> <!-- class="project-row" -->
+   <div class="project-row">
+    <div class="project-wrapper">
+     <div class="img-container">
+      <img class="project-img" src="./images/twitch.png"
+           alt="Twitch.tv screenshot" />
+      <a href="https://codepen.io/Vocado78/pen/jwbOyp" target="_blank"
+         rel="noopener">
+       <div class="img-overlay-btn">Visit project site<span>&#10095;</span>
+       </div>
+      </a>
+     </div> <!-- class="img-container" -->
+     <div class="project-text">
+      <h2>Twitch.tv</h2>
+      <p>This app shows whether some regular Twitch.tv users are currently
+         streaming. Different API calls are made to fetch all data needed for
+         the display, which has a toggle feature. The project is part of the
+         online coding curriculum.</p>
+      <ul class="tags-container">
+       <li class="tags">JavaScript</li>
+       <li class="tags">jQuery</li>
+       <li class="tags">Twitch.tv API</li>
+       <li class="tags">Responsive design</li>
+      </ul>
+     </div> <!-- class="project-text" -->
+    </div> <!-- class="project-wrapper" -->
+   </div> <!-- class="project-row" -->
+   <div class="project-row remove-border">
+    <div class="project-wrapper">
+     <div class="img-container">
+      <img class="project-img" src="./images/wiki-viewer.png"
+           alt="Wikipedia Viewer screenshot" />
+      <a href="https://codepen.io/Vocado78/pen/oWqzBG" target="_blank"
+           rel="noopener">
+       <div class="img-overlay-btn">Visit project site<span>&#10095;</span>
+       </div>
+      </a>
+     </div> <!-- class="img-container" -->
+     <div class="project-text">
+      <h2>Wikipedia Viewer</h2>
+      <p>An app for searching and finding Wikipedia entries. A customised API
+         call is made using the typed-in search word and the user is then
+         presented with the search results. This project is also part of the
+         online coding curriculum.</p>
+      <ul class="tags-container">
+       <li class="tags">JavaScript</li>
+       <li class="tags">jQuery</li>
+       <li class="tags">Wikipedia API</li>
+       <li class="tags">Responsive design</li>
+      </ul>
+     </div> <!-- class="project-text" -->
+    </div> <!-- class="project-wrapper" -->
+   </div> <!-- class="project-row" -->
+   <div class="half-circle-bottom" style="background-color:#cabeb4"></div>
+  </section>
+
+  <section id="contact" class="contact-container section">
+   <h1 class="section-header">Get in touch</h1>
+   <div class="contact-wrapper">
+    <form class="form" action="https://formspree.io/hedeliningrid@gmail.com"
+          method="post">
+     <label for="name">Name*</label>
+     <input type="text" id="name" name="name" maxlength="250" required>
+     <span class="error-name" aria-live="polite"></span>
+     <label for="email">E-mail address*</label>
+     <input type="email" id="email" name="_replyto" required>
+     <span class="error-email" aria-live="polite"></span>
+     <label for="message">Message*</label>
+     <textarea name="message" id="message" maxlength="1000" required></textarea>
+     <span class="error-msg" aria-live="polite"></span>
+     <button type="submit" class="submit">Send</button>
+    </form>
+    <div class="contact-card">
+     <div class="map"></div>
+     <div class="icon-wrapper">
+      <a href="mailto:hedeliningrid@gmail.com"><div class="email"></div></a>
+      <a href="https://github.com/Vocado78" target="_blank" rel="noopener">
+       <div class="github"></div>
+      </a>
+      <a href="https://se.linkedin.com/in/ingridhedelin" target="_blank"
+         rel="noopener"><div class="linkedin"></div>
+      </a>
+     </div> <!-- class="icon-wrapper" -->
+    </div> <!-- class="contact-card" -->
+   </div> <!-- class="contact-wrapper" -->
+  </section>
+
+  <footer class="footer">
+   <p>&#169; 2017 www.ingridhedelin.com</p>
+   <p>This website's code contains valid HTML and CSS.</p>
+  </footer>
+ </body>
+</html>
