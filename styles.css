@@ -247,6 +247,7 @@ h1, h2 {
 }
 
 .about-skills > ul > li > span {
+  font-family: "Segoe UI Symbol";
   margin-right: 10px;
   padding: 2px 4px;
   background-color: #5b1f93;
