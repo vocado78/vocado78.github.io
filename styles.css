@@ -11,11 +11,15 @@ body {
 
 body, .form input, .form textarea, .btn-submit {
   font-family: 'Roboto', 'Arial', sans-serif;
-  color: #000000;
+  color: #595959;
 }
 
 h1, h2 {
   font-family: 'Raleway', 'Arial', sans-serif;
+}
+
+.container {
+  padding: 3.125em 1em;
 }
 
 /* --------------------
@@ -87,45 +91,12 @@ h1, h2 {
   margin: 0.5em auto;
 }
 
-.presentation {
-  background-color: #cabeb4;
-  text-align: center;
-}
-
-.presentation p {
-  padding: 2.7em 0;
-  font-size: 1.5em;
-}
-
-.half-circle-bottom {
-  height: 45px;
-  width: 180px;
-  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
-  margin: 2em auto 0 auto;
-}
-
-.half-circle-bottom:first-of-type {
-  display: none;
-}
-
 /* --------------------
         #About
 ---------------------*/
-.about-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: #dfd8d2;
-  padding: 3.125em 1em 0 1em;
-}
-
 .section-header {
-  font-size: 3em;
-  color: #5b1f93;
+  font-size: 2.5em;
+  /*color: #333333;*/
   text-transform: uppercase;
   text-align: center;
   position: relative;
@@ -135,9 +106,9 @@ h1, h2 {
 .section-header:after {
   content: "";
   position: absolute;
-  left: 46%;
+  left: 48%;
   bottom: 0;
-  width: 8%;
+  width: 4%;
   border-bottom: 3px solid #5b1f93;
 }
 
@@ -224,50 +195,14 @@ h1, h2 {
           flex-direction: column;
   padding-top: 1.7em;
   width: 100%;
-  margin-bottom: 1.5em;
-}
-
-.about-what {
-  padding-right: 2em;
-}
-
-.about-container h2 {
-  font-size: 1.5em;
-  text-transform: uppercase;
-  margin-bottom: 0.83em;
-}
-
-.about-skills {
-  margin-top: 1.7em;
-}
-
-.about-skills ul {
-  list-style-type: none;
-  line-height: 1.5;
-}
-
-.about-skills > ul > li > span {
-  font-family: 'Segoe UI Symbol';
-  margin-right: 10px;
-  padding: 2px 4px;
-  background-color: #5b1f93;
-  color: #dfd8d2;
-  border-radius: 3px;
-  font-size: 0.75em;
-  font-weight: bold;
 }
 
 /* --------------------
         #Projects
 ---------------------*/
-.project-container {
-  background-color: #d7cec7;
-  padding: 3.125em 1em 0 1em;
-}
-
 .project-row {
   padding: 3.125em 0;
-  border-bottom: 1px solid #eae5e1;
+  border-bottom: 1px solid #ffffff;
   width: 100%;
 }
 
@@ -387,12 +322,6 @@ h1, h2 {
 /* --------------------
         #Contact
 ---------------------*/
-
-.contact-container {
-  background-color: #cabeb4;
-  padding: 3.125em 0 1.56em 0;
-}
-
 .contact-wrapper {
   width: 100%;
   font-size: 1.125em;
@@ -580,12 +509,8 @@ h1, h2 {
     height: 579px;
     background-image: url("./images/banner-mdm.jpg");
   }
-  .half-circle-bottom:first-of-type {
-    display: block;
-    margin: 0 auto;
-  }
-  .about-container {
-    padding: 3.125em 0 0 0;
+  .container {
+    padding: 3.125em 0;
   }
   .about-intro {
     width: 90%;
@@ -597,20 +522,10 @@ h1, h2 {
   }
   .what-skills-wrapper {
     width: 90%;
-    margin: 0 auto 1.5em auto;
-  }
-  .about-skills ul {
-    -webkit-column-count: 3;
-    column-count: 3;
-  }
-  .about-skills > ul > li > span {
-    margin-right: 5px;
+    margin: 0 auto;
   }
   .project-text {
     width: 75%;
-  }
-  .contact-container {
-    padding: 3.125em 0 3em 0;
   }
   .contact-wrapper {
     -webkit-box-orient: horizontal;
@@ -626,13 +541,10 @@ h1, h2 {
   }
   .contact-card {
     margin: 4.5em 0 4.2em 1.5em;
-}
+  }
 }
 
 @media screen and (min-width: 861px) {
-  .project-container {
-    padding: 3.125em 0 0 0;
-  }
   .project-row {
     width: 90%;
     margin: auto;
@@ -672,11 +584,8 @@ h1, h2 {
     /*height: 772px;*/
     background-image: url("./images/banner-lrg.jpg");
   }
-  .half-circle-bottom:first-of-type {
-    margin: 0.5em auto 0 auto;
-  }
-  .about-container, .project-container {
-    padding-top: 4.6875em;
+  .container {
+    padding: 4.6875em 0;
   }
   .about-intro {
     width: 960px;
@@ -696,19 +605,7 @@ h1, h2 {
         -ms-flex-direction: row;
             flex-direction: row;
     width: 960px;
-    margin: 0 auto 4.68em auto;
-  }
-  .about-what {
-    width: 60%;
-    padding-right: 1.5em;
-  }
-  .about-skills {
-    width: 40%;
-    margin-top: 0;
-  }
-  .about-skills ul {
-    -webkit-column-width: 180px;
-    column-width: 180px;
+    margin: 0 auto;
   }
   .project-row {
     width: 100%;
@@ -738,9 +635,6 @@ h1, h2 {
   .img-container {
     width: 400px;
     height: 250px;
-  }
-  .contact-container {
-    padding: 4.6875em 0 4.5em 0;
   }
   .contact-wrapper {
     width: 960px;
