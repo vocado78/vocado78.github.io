@@ -14,7 +14,7 @@ body, .form input, .form textarea, .btn-submit {
   color: #595959;
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-family: 'Raleway', 'Arial', sans-serif;
 }
 
@@ -96,7 +96,7 @@ h1, h2 {
 ---------------------*/
 .section-header {
   font-size: 2.5em;
-  /*color: #333333;*/
+  color: #737373;
   text-transform: uppercase;
   text-align: center;
   position: relative;
@@ -202,13 +202,13 @@ h1, h2 {
 ---------------------*/
 .project-row {
   padding: 3.125em 0;
-  border-bottom: 1px solid #ffffff;
+  /*border-bottom: 1px solid #ffffff;*/
   width: 100%;
 }
 
-.remove-border {
+/*.remove-border {
   border: none;
-}
+}*/
 
 .project-wrapper {
   display: -webkit-box;
@@ -221,14 +221,14 @@ h1, h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-shadow: 0 2px 4px #666666;
+          box-shadow: 0 2px 4px #666666;
 }
 
 .img-container {
   width: 300px;
   height: 187.5px;
   position: relative;
-  -webkit-box-shadow: 0 2px 4px #666666;
-          box-shadow: 0 2px 4px #666666;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
   -webkit-transition: all 0.75s;
@@ -285,13 +285,14 @@ h1, h2 {
 
 .project-text {
   width: 100%;
-  margin-top: 2em;
   line-height: 1.5;
   text-align: center;
+  background-color: #ffffff;
 }
 
-.project-text h2 {
+.project-text h3 {
   font-size: 1.5em;
+  font-weight: 500;
   text-transform: uppercase;
   margin-bottom: 1em;
   line-height: 1;
@@ -353,7 +354,7 @@ h1, h2 {
   padding: 0.55em;
   border: none;
   border-radius: 3px;
-  background-color: #dfd8d2;
+  background-color: #e6e6e6;
   color: #000000;
 }
 
@@ -364,7 +365,7 @@ h1, h2 {
   padding: 0.55em;
   border: none;
   border-radius: 3px;
-  background-color: #dfd8d2;
+  background-color: #e6e6e6;
   color: #000000;
   resize: none;
 }
@@ -379,7 +380,7 @@ h1, h2 {
   background: #5b1f93;
   background: -webkit-linear-gradient(rgb(91, 31, 147), rgb(118, 31, 147));
   background: linear-gradient(rgb(91, 31, 147), rgb(118, 31, 147));
-  color: #dfd8d2;
+  color: #ffffff;
   padding: 0.45em 1.66em;
   border: none;
   border-radius: 3px;
@@ -388,7 +389,7 @@ h1, h2 {
 
 .submit:hover {
   background: #5b3181;
-  color: #aa9788;
+  color: #e6e6e6;
 }
 
 .error-name, .error-email, .error-msg {
@@ -419,7 +420,7 @@ h1, h2 {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding: 20.5px 0;
-  background-color: #dfd8d2;
+  background-color: #e6e6e6;
 }
 
 .email {
@@ -560,13 +561,14 @@ h1, h2 {
           align-items: flex-start;
   }
   .project-text {
-    width: 52%;
-    margin: 0 0 0 3.125em;
+    width: 50%;
+    height: 100%;
+    /*margin: 0 0 0 50px;*/
     text-align: left;
   }
   .img-container {
-    width: 360px;
-    height: 225px;
+    width: 50%;
+    height: 100%;
   }
   .tags-container {
     -webkit-box-pack: start;
@@ -604,17 +606,18 @@ h1, h2 {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    justify-content: space-between;
     width: 960px;
     margin: 0 auto;
   }
   .project-row {
     width: 100%;
     max-width: 1920px;
-    padding: 75px 0;
-    border-bottom: none;
-    position:relative;
+    padding: 50px 0;
+    border: 1px solid red;
+    position: relative;
   }
-  .project-row:after {
+  /*.project-row:after {
     content: "";
     position: absolute;
     width: 960px;
@@ -627,14 +630,15 @@ h1, h2 {
   .remove-border:after {
     content: "";
     border-bottom: none;
-  }
+  }*/
   .project-wrapper {
     width: 960px;
+    height: 300px;
     margin: 0 auto;
   }
   .img-container {
-    width: 400px;
-    height: 250px;
+    width: 50%;
+    height: 100%;
   }
   .contact-wrapper {
     width: 960px;
