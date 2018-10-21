@@ -77,18 +77,35 @@ h1, h2, h3 {
      -ms-flex-pack: center;
    justify-content: center;
    text-align: center;
+  position: relative;
+}
+
+.banner::before {
+  content: '';
+	position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #662871; /* Old browsers */
+  background: -moz-linear-gradient(left, #008080 1%, #662871 70%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #008080 1%,#662871 70%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #008080 1%,#662871 70%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  opacity: 0.85;
 }
 
 .banner h1 {
   font-size: 4em;
-  color: #f4f2f0;
+  color: #ffffff;
   margin: 0 auto;
+  z-index: 2;
 }
 
 .banner p {
   font-size: 1.25em;
-  color: #f4f2f0;
+  color: #ffffff;
   margin: 0.5em auto;
+  z-index: 2;
 }
 
 /* --------------------
@@ -103,13 +120,11 @@ h1, h2, h3 {
   padding-bottom: 0.5em;
 }
 
-.section-header:after {
-  content: "";
-  position: absolute;
-  left: 48%;
-  bottom: 0;
-  width: 4%;
-  border-bottom: 3px solid #5b1f93;
+.underline {
+  width: 75px;
+  height: 3px;
+  background-color: #662871;
+  margin: 0 auto 4em auto;
 }
 
 .about-intro {
@@ -159,20 +174,16 @@ h1, h2, h3 {
   line-height: 1.5;
 }
 
-.about-intro p:first-of-type {
-  margin-top: 2.5em;
-}
-
 .new-p {
   margin-top: 1.5em;
 }
 
-.about-intro a, .project-text a {
+.about-intro a, .project-info a {
   text-decoration: none;
   color: #5b1f93;
 }
 
-.project-text a {
+.project-info a {
   color: #000000;
   border-bottom: 1px dotted #000000;
 }
@@ -181,7 +192,7 @@ h1, h2, h3 {
   border-bottom: 1px solid #5b1f93;
 }
 
-.project-text a:hover {
+.project-info a:hover {
   border-bottom: 1px solid #000000;
 }
 
@@ -221,8 +232,8 @@ h1, h2, h3 {
 }
 
 .project-img {
-  width: 40%;
-  height: 45%;
+  width: 30%;
+  height: 35%;
 }
 
 .project h3 {
@@ -481,7 +492,7 @@ h1, h2, h3 {
       Media queries
 ---------------------*/
 @media screen and (min-width: 501px) {
-  .img-container, .project {
+  .project {
     width: 360px;
     height: 225px;
   }
@@ -561,7 +572,7 @@ h1, h2, h3 {
   .banner {
     height: 760px;
     /*height: 772px;*/
-    background-image: url("./images/banner-lrg.jpg");
+    background-image: url("./images/banner-large.jpg");
   }
   .container {
     padding: 4.6875em 0;
@@ -569,9 +580,6 @@ h1, h2, h3 {
   .about-intro {
     width: 960px;
     margin: auto;
-  }
-  .about-intro p:first-of-type {
-    margin-top: 4em;
   }
   .portrait-wrapper {
     width: 350px;
