@@ -14,7 +14,7 @@ body, .form input, .form textarea, .btn-submit {
   color: #595959;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: 'Raleway', 'Arial', sans-serif;
 }
 
@@ -196,6 +196,9 @@ h1, h2, h3 {
   border-bottom: 1px solid #000000;
 }
 
+/* --------------------
+        #What and skills
+---------------------*/
 .what-skills-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -204,8 +207,24 @@ h1, h2, h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 1.7em;
   width: 100%;
+}
+
+.skills-item {
+ text-align: center;
+ line-height: 1.5em;
+}
+
+.what-icon {
+  margin-bottom: 1.5em;
+}
+
+.skills-item h4 {
+  text-transform: uppercase;
+  font-size: 0.89em;
+  letter-spacing: 0.15em;
+  margin-bottom: 1em;
+  color: #662871;
 }
 
 /* --------------------
