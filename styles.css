@@ -211,12 +211,14 @@ h1, h2, h3, h4 {
 }
 
 .skills-item {
- text-align: center;
+ display: flex;
+ align-items: flex-start;
  line-height: 1.5em;
 }
 
-.what-icon {
-  margin-bottom: 1.5em;
+.skills-item .skills-item-content {
+  flex: 1;
+  padding: 0 25px;
 }
 
 .skills-item h4 {
@@ -225,6 +227,14 @@ h1, h2, h3, h4 {
   letter-spacing: 0.15em;
   margin-bottom: 1em;
   color: #662871;
+}
+
+.tech {
+  margin-bottom: 3em;
+}
+
+.tech h4 {
+  color: #008080;
 }
 
 /* --------------------
@@ -610,6 +620,12 @@ h1, h2, h3, h4 {
     justify-content: space-between;
     width: 960px;
     margin: 0 auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .skills-item {
+    flex: 1 1 350px;
   }
   
   .project-wrapper {
