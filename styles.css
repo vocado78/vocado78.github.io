@@ -187,9 +187,9 @@ h1, h2, h3, h5 {
   color: #008080;
 }
 
-.about-intro a:hover, .project-info a:hover {
+/*.about-intro a:hover, .project-info a:hover {
   border-bottom: 1px solid #008080;
-}
+}*/
 
 /* --------------------
         #What and skills
@@ -252,21 +252,34 @@ h1, h2, h3, h5 {
 }
 
 .project {
-  width: 100%;
-  height: 300px;
+  width: 375px;
+  height: 450px;
+  background-color: #ffffff;
+  margin: 10px;
   position: relative;
-  background-color: #662871;
+  border-radius: 2px;
+}
+
+.project-img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  background: #662871;
+  border-radius: 50%;
 }
 
 .project-img {
-  width: 30%;
-  height: 35%;
+  width: 50px;
+  height: 50px;
 }
 
 .project h3 {
-  font-size: 1.5em;
-  font-weight: 500;
-  color: #ffffff;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #662871;
 }
 
 .project-info {
@@ -293,24 +306,22 @@ h1, h2, h3, h5 {
 }
 
 .project-info h3 {
-  color: #737373;
-  font-size: 1.5em;
-  font-weight: 500;
+  color: #008080;
 }
 
 .project-btn {
   width: 150px;
   padding: 5px;
-  background: #ffffff;
-  border: 3px solid #008080;
+  background: #008080;
+  color: #ffffff;
+  border: 2px solid #008080;
   border-radius: 3px;
-  text-transform: uppercase;
 }
 
 .project-btn:hover {
   cursor: pointer;
-  background: #008080;
-  color: #ffffff;
+  background: #ffffff;
+  color: #008080;
 }
 
 .project:hover .project-info {
@@ -335,10 +346,11 @@ h1, h2, h3, h5 {
   font-size: 0.89em;
   background-color: #ffffff;
   color: #662871;
+  border: 1px solid #662871;
   border-radius: 3px;
   padding: 0 0.625em;
   margin-right: 0.625em;
-  margin-top: 1.5em;
+  margin-top: 1em;
 }
 
 /* --------------------
@@ -554,10 +566,6 @@ h1, h2, h3, h5 {
         flex-wrap: wrap;
     justify-content: center;
   }
-  .project {
-    width: 45%;
-    margin: 10px;
-  }
   .contact-wrapper {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -576,14 +584,11 @@ h1, h2, h3, h5 {
 }
 
 @media screen and (min-width: 861px) {
-  .tags-container {
+  /*.tags-container {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-  }
-  .tags {
-    margin-top: 1em;
-  }
+  }*/
 }
 
 @media only screen and (min-width: 981px) {
@@ -620,19 +625,19 @@ h1, h2, h3, h5 {
     flex: 1 1 350px;
   }
   
-  .project-wrapper {
+  /*.project-wrapper {
     max-width: 1200px;
     margin: 0 auto;
-  }
+  }*/
 
   .project {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width: 45%;
-    /*height: 300px;*/
-    margin: 25px;
+    /*width: 325px;
+    height: 300px;
+    margin: 12.5px;*/
   }
 
   .contact-wrapper {
