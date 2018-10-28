@@ -3,6 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
@@ -14,7 +15,7 @@ body, .form input, .form textarea, .btn-submit {
   color: #595959;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h5 {
   font-family: 'Raleway', 'Arial', sans-serif;
 }
 
@@ -123,8 +124,11 @@ h1, h2, h3, h4 {
 .underline {
   width: 75px;
   height: 3px;
-  background-color: #662871;
   margin: 0 auto 4em auto;
+  background: #662871; /* Old browsers */
+  background: -moz-linear-gradient(left, #008080 1%, #662871 70%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #008080 1%,#662871 70%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #008080 1%,#662871 70%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 .about-intro {
@@ -180,20 +184,11 @@ h1, h2, h3, h4 {
 
 .about-intro a, .project-info a {
   text-decoration: none;
-  color: #5b1f93;
+  color: #008080;
 }
 
-.project-info a {
-  color: #000000;
-  border-bottom: 1px dotted #000000;
-}
-
-.about-intro a:hover {
-  border-bottom: 1px solid #5b1f93;
-}
-
-.project-info a:hover {
-  border-bottom: 1px solid #000000;
+.about-intro a:hover, .project-info a:hover {
+  border-bottom: 1px solid #008080;
 }
 
 /* --------------------
@@ -214,6 +209,7 @@ h1, h2, h3, h4 {
  display: flex;
  align-items: flex-start;
  line-height: 1.5em;
+ margin-bottom: 1.5em;
 }
 
 .skills-item .skills-item-content {
@@ -221,20 +217,21 @@ h1, h2, h3, h4 {
   padding: 0 25px;
 }
 
-.skills-item h4 {
+.skills-item h5 {
   text-transform: uppercase;
-  font-size: 0.89em;
   letter-spacing: 0.15em;
   margin-bottom: 1em;
-  color: #662871;
+  color: #333333;
+  font-weight: bold;
 }
 
 .tech {
   margin-bottom: 3em;
 }
 
-.tech h4 {
-  color: #008080;
+.skills-icon {
+  width: 50px;
+  height: 50px;
 }
 
 /* --------------------
@@ -305,19 +302,14 @@ h1, h2, h3, h4 {
   width: 150px;
   padding: 5px;
   background: #ffffff;
-  border: 3px solid #662871;
+  border: 3px solid #008080;
   border-radius: 3px;
   text-transform: uppercase;
 }
 
-.project-info a {
-  text-decoration: none;
-  color: #662871;
-}
-
 .project-btn:hover {
   cursor: pointer;
-  background: #662871;
+  background: #008080;
   color: #ffffff;
 }
 
