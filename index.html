@@ -246,20 +246,45 @@
    <div class="contact-wrapper">
     <form class="form" action="https://formspree.io/hedeliningrid@gmail.com"
           method="post">
-     <label for="name">Name*</label>
-     <input type="text" id="name" name="name" maxlength="250" required>
-     <span class="error-name" aria-live="polite"></span>
-     <label for="email">E-mail address*</label>
-     <input type="email" id="email" name="_replyto" required>
-     <span class="error-email" aria-live="polite"></span>
+     <div class="form-row">
+       <div class="row-item">
+          <label for="name">Name*</label>
+          <input type="text" id="name" name="name" maxlength="250" required>
+          <span class="error-name" aria-live="polite"></span>
+       </div>
+       <div class="row-item">
+          <label for="email">E-mail address*</label>
+          <input type="email" id="email" name="_replyto" required>
+          <span class="error-email" aria-live="polite"></span>
+       </div>
+     </div>
      <label for="message">Message*</label>
      <textarea name="message" id="message" maxlength="1000" required></textarea>
      <span class="error-msg" aria-live="polite"></span>
      <button type="submit" class="submit">Send</button>
     </form>
-    <div class="contact-card">
-     <div class="map"></div>
-     <div class="icon-wrapper">
+    <div class="details">
+      <div class="detail">
+        <img class="detail-icon" src="./images/location.svg" alt="Address pin" />
+        <h4>Where I Am</h4>
+        <p>Stockholm, Sweden</p> 
+      </div>
+      <div class="detail">
+        <img class="detail-icon" src="./images/email.svg" alt="Email icon" />
+        <h4>Email Me</h4>
+        <p>hedeliningrid(at)gmail.com</p> 
+        </div>
+      <div class="detail">
+        <img class="detail-icon" src="./images/github.svg" alt="Github icon" />
+        <h4>View My Code</h4>
+        <p>github.com/vocado78</p> 
+      </div>
+      <div class="detail">
+        <img class="detail-icon" src="./images/linkedin.svg" alt="Linkedin icon" />
+        <h4>Connect With Me</h4>
+        <p>linkedin.com/in/ingridhedelin</p> 
+      </div>
+     <!-- <div class="icon-wrapper">
       <a href="mailto:hedeliningrid@gmail.com"><div class="email"></div></a>
       <a href="https://github.com/vocado78" target="_blank" rel="noopener">
        <div class="github"></div>
@@ -267,8 +292,8 @@
       <a href="https://se.linkedin.com/in/ingridhedelin" target="_blank"
          rel="noopener"><div class="linkedin"></div>
       </a>
-     </div> <!-- class="icon-wrapper" -->
-    </div> <!-- class="contact-card" -->
+     </div>  class="icon-wrapper" -->
+    </div> <!-- class="details" -->
    </div> <!-- class="contact-wrapper" -->
   </section>
 
