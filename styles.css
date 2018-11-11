@@ -8,6 +8,7 @@
 
 body {
   font-size: 16px;
+  background-color: #1a1a1a;
 }
 
 body, .form input, .form textarea, .btn-submit {
@@ -15,7 +16,7 @@ body, .form input, .form textarea, .btn-submit {
   color: #595959;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h5 {
   font-family: 'Raleway', 'Arial', sans-serif;
 }
 
@@ -356,17 +357,9 @@ h1, h2, h3, h4, h5 {
 /* --------------------
         #Contact
 ---------------------*/
-.contact-wrapper {
-  max-width: 960px;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  align-items: center;
+
+#contact {
+  padding-bottom: 0; 
 }
 
 .form {
@@ -378,7 +371,9 @@ h1, h2, h3, h4, h5 {
       -ms-flex-direction: column;
           flex-direction: column;
   /* position: relative; */
-  width: 90%;
+  max-width: 960px;
+  padding: 0 5%;
+  margin: 0 auto;
 }
 
 .form-row {
@@ -415,21 +410,21 @@ h1, h2, h3, h4, h5 {
 }
 
 .submit {
-  font-size: 18px;
+  font-size: 16px;
   text-transform: uppercase;
-  font-weight: bold;
-  background: #5b1f93;
-  background: -webkit-linear-gradient(rgb(91, 31, 147), rgb(118, 31, 147));
-  background: linear-gradient(rgb(91, 31, 147), rgb(118, 31, 147));
+  background: #662871;
+  background: -webkit-linear-gradient(#662871, #ad00cc);
+  background: linear-gradient(#662871, #ad00cc);
   color: #ffffff;
-  padding: 16px 0;
+  padding: 14px 0;
   border: none;
   border-radius: 3px;
-  margin-top: 32px;
+  margin: 32px auto 0 auto;
+  width: 175px;
 }
 
 .submit:hover {
-  background: #5b3181;
+  background: #662871;
   color: #e6e6e6;
   cursor: pointer;
 }
@@ -445,7 +440,9 @@ h1, h2, h3, h4, h5 {
   flex-direction: column;
   font-size: 14px;
   width: 90%;
-  margin-top: 75px;
+  margin-top: 100px;
+  background-color: #1a1a1a;
+  padding: 65px 0;
 }
 
 .detail {
@@ -454,6 +451,7 @@ h1, h2, h3, h4, h5 {
   align-items: center;
   justify-content: space-between;
   height: 100px;
+  color: #808080;
 }
 
 .detail-icon {
@@ -461,16 +459,35 @@ h1, h2, h3, h4, h5 {
 }
 
 .detail h4 {
-  color: #662871;
+  /* color: #820099; */
+  color: #ad00cc;
   margin-bottom: 0;
   padding-top: 10px;
+}
+
+.detail a {
+  text-decoration: none;
+  color: #808080;
+}
+
+.detail a:hover {
+  border-bottom: 1px solid #808080;
 }
 
 /* --------------------
         Footer
 ---------------------*/
+hr {
+  color: #808080;
+  background-color: #808080;
+  width: 90%;
+  height: 1px;
+  border: none;
+  margin: 0 auto;
+}
+
 .footer {
-  height: 150px;
+  height: 75px;
   background-color: #1a1a1a;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -485,32 +502,17 @@ h1, h2, h3, h4, h5 {
 
 .footer p {
   font-size: 0.875em;
-  color: #a6a6a6;
+  color: #808080;
   padding: 0.7em 1.4em;
 }
 
 .footer p:first-of-type {
-  border-right: 1px solid  #a6a6a6;
-}
-
-.footer p > a {
-  text-decoration: none;
-  color: #d9d9d9;
-}
-
-.footer p > a:hover {
-  color: #9b57db;
+  border-right: 1px solid  #808080;
 }
 
 /* --------------------
       Media queries
 ---------------------*/
-/*@media screen and (min-width: 501px) {
-  .project {
-    width: 360px;
-    height: 225px;
-  }
-}*/
 
 @media screen and (min-width: 761px) {
   .menu a {
@@ -551,20 +553,13 @@ h1, h2, h3, h4, h5 {
     width: 100%;
   }
   .form {
-    width: 80%;
+    padding: 0 10%;
   }
   .detail {
     width: 25%;
   }
 }
 
-@media screen and (min-width: 861px) {
-  /*.tags-container {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }*/
-}
 
 @media only screen and (min-width: 981px) {
   .banner {
@@ -599,23 +594,11 @@ h1, h2, h3, h4, h5 {
   .skills-item {
     flex: 1 1 350px;
   }
-  
-  /*.project-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-  }*/
 
   .project {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    /*width: 325px;
-    height: 300px;
-    margin: 12.5px;*/
-  }
-
-  #contact {
-    padding-bottom: 60px; 
   }
 }
