@@ -8,7 +8,6 @@
 
 body {
   font-size: 16px;
-  background-color: #1a1a1a;
 }
 
 body, .form input, .form textarea, .btn-submit {
@@ -239,7 +238,7 @@ h1, h2, h3, h5 {
         #Projects
 ---------------------*/
 .project-wrapper {
-  width: 100%;
+  /* width: 100%; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -253,10 +252,14 @@ h1, h2, h3, h5 {
 }
 
 .project {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   width: 375px;
   height: 450px;
   background-color: #ffffff;
-  margin: 10px;
+  margin: 20px;
   position: relative;
   border-radius: 2px;
 }
@@ -294,11 +297,12 @@ h1, h2, h3, h5 {
   right: 0;
   width: 100%;
   height: 100%;
+  padding: 0 10px;
   background-color: #ffffff;
   font-size: 1em;
   line-height: 1.5em;
   text-align: center;
-  overflow:hidden;
+  overflow: hidden;
   -webkit-transform: scale(0);
   -ms-transform: scale(0);
   transform: scale(0);
@@ -319,7 +323,7 @@ h1, h2, h3, h5 {
   border-radius: 3px;
 }
 
-.project-btn:hover {
+.project-btn:hover, .submit:hover {
   cursor: pointer;
   background: #ffffff;
   color: #008080;
@@ -412,22 +416,21 @@ h1, h2, h3, h5 {
 .submit {
   font-size: 16px;
   text-transform: uppercase;
-  background: #662871;
-  background: -webkit-linear-gradient(#662871, #ad00cc);
-  background: linear-gradient(#662871, #ad00cc);
+  padding: 12px 0;
+  background: #008080;
   color: #ffffff;
-  padding: 14px 0;
-  border: none;
+  border: 2px solid #008080;
   border-radius: 3px;
   margin: 32px auto 0 auto;
-  width: 175px;
+  width: 100%;
+  letter-spacing: 0.1em;
 }
 
-.submit:hover {
+/* .submit:hover {
   background: #662871;
   color: #e6e6e6;
   cursor: pointer;
-}
+} */
 
 .error-name, .error-email, .error-msg {
   font-size: 0.88em;
@@ -439,19 +442,15 @@ h1, h2, h3, h5 {
   display: flex;
   flex-direction: column;
   font-size: 14px;
-  width: 90%;
-  margin-top: 100px;
-  background-color: #1a1a1a;
-  padding: 65px 0;
+  max-width: 960px;
+  margin: 100px auto 65px auto;
 }
 
 .detail {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  height: 100px;
-  color: #808080;
+  text-decoration: none;
 }
 
 .detail-icon {
@@ -459,32 +458,14 @@ h1, h2, h3, h5 {
 }
 
 .detail h4 {
-  /* color: #820099; */
-  color: #ad00cc;
-  margin-bottom: 0;
+  color: #008080;
   padding-top: 10px;
-}
-
-.detail a {
-  text-decoration: none;
-  color: #808080;
-}
-
-.detail a:hover {
-  border-bottom: 1px solid #808080;
+  letter-spacing: 0.1em;
 }
 
 /* --------------------
         Footer
 ---------------------*/
-hr {
-  color: #808080;
-  background-color: #808080;
-  width: 90%;
-  height: 1px;
-  border: none;
-  margin: 0 auto;
-}
 
 .footer {
   height: 75px;
@@ -538,25 +519,22 @@ hr {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-align: start;
-       -ms-flex-align: start;
-          align-items: flex-start;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     justify-content: center;
+  }
+  .form {
+    padding: 0 10%;
   }
   .details {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    width: 100%;
-  }
-  .form {
-    padding: 0 10%;
+    justify-content: space-around;
   }
   .detail {
-    width: 25%;
+    width: 175px;
   }
 }
 
@@ -590,15 +568,17 @@ hr {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-
   .skills-item {
     flex: 1 1 350px;
   }
+  .project-wrapper {
+    width: 960px;
+    margin: 0 auto;
+  }
+}
 
-  .project {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+@media only screen and (min-width: 1660px) {
+  .project-wrapper {
+    width: 100%;
   }
 }
