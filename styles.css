@@ -55,9 +55,7 @@ h1, h2, h3, h5 {
 }
 
 .menu a:hover, a.active {
-  background-color: #f4f2f0;
-  color: #1a1a1a;
-  border-radius: 3px;
+  color: #9c19b3;
 }
 
 .banner {
