@@ -451,6 +451,12 @@ h1, h2, h3, h5 {
   text-decoration: none;
 }
 
+.detail:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
 .detail-icon {
   width: 32px;
 }
