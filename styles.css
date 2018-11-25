@@ -105,7 +105,7 @@ h1, h2, h3, h5 {
 }
 
 .banner p {
-  font-size: 20px;
+  font-size: 22px;
 }
 
 /* --------------------
@@ -138,13 +138,13 @@ h1, h2, h3, h5 {
   width: 262.5px;
   height: 183.75px;
   margin: 3em auto 0 auto;
-  position: relative;
+  /* position: relative;
   z-index: 1;
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4); */
 }
 
-.portrait-wrapper:before,
+/* .portrait-wrapper:before,
 .portrait-wrapper:after {
   content:"";
   position: absolute;
@@ -165,16 +165,22 @@ h1, h2, h3, h5 {
   left: auto;
   -webkit-transform: rotate(4deg);
   transform: rotate(4deg);
-}
+} */
 
 .portrait {
   width: 100%;
   height: auto;
-  border: 0.6em solid white;
+  border-radius: 50%;
+  /* border: 0.6em solid white; */
 }
 
-.about-container p {
+.about-intro p {
   line-height: 1.5;
+}
+
+.about-intro p:first-of-type {
+  font-size: 20px;
+  color: #008080;
 }
 
 .new-p {
@@ -580,7 +586,7 @@ footer div p:first-of-type {
   .portrait-wrapper {
     width: 350px;
     height: 245px;
-    margin: 4.4em 2em 1em 1.5em;
+    /* margin: 4.4em 2em 1em 1.5em; */
   }
   .what-skills-wrapper {
     -webkit-box-orient: horizontal;
