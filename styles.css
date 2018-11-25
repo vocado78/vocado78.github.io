@@ -471,28 +471,41 @@ h1, h2, h3, h5 {
         Footer
 ---------------------*/
 
-.footer {
-  height: 75px;
+footer {
+  height: 150px;
   background-color: #1a1a1a;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  padding: 25px 0;
 }
 
-.footer p {
-  font-size: 0.875em;
+footer div {
+  display: flex;
+  margin-bottom: auto;
+}
+
+footer p {
+  font-size: 14px;
+  color: #b3b3b3;
+  padding: 10px 15px;
+}
+
+footer div p:first-of-type {
+  border-right: 1px solid  #b3b3b3;
+}
+
+.attr {
+  padding: 3px;
+  color: #808080; 
+}
+
+.attr a {
   color: #808080;
-  padding: 0.7em 1.4em;
-}
-
-.footer p:first-of-type {
-  border-right: 1px solid  #808080;
 }
 
 /* --------------------
