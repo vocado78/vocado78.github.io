@@ -101,7 +101,6 @@ h1, h2, h3, h5 {
   z-index: 2;
   height: 125px;
   color: #ffffff;
-  border: 1px solid red;
 }
 
 .banner h1 {
@@ -510,13 +509,9 @@ footer div p:first-of-type {
 
 
 @media only screen and (min-width: 981px) {
-  .navlink-wrapper {
-    width: 960px;
-    margin: 0 auto;
-  }
   .banner {
-    height: 868px;
-    /*height: 772px;*/
+    /* height: 868px; */
+    height: 772px;
     background-image: url("./images/banner-large.jpg");
   }
   .banner-text {
