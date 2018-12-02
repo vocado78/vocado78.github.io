@@ -20,7 +20,7 @@ h1, h2, h3, h5 {
 }
 
 .container {
-  padding: 3.125em 1em;
+  padding: 50px 16px;
 }
 
 /* --------------------
@@ -54,7 +54,7 @@ h1, h2, h3, h5 {
   text-transform: uppercase;
   color: #f4f2f0;
   padding: 0 3px;
-  margin: 1em 0 1em 1em;
+  margin: 16px 0 16px 16px;
 }
 
 .navlink-wrapper a:hover, a.active {
@@ -101,7 +101,7 @@ h1, h2, h3, h5 {
 }
 
 .banner h1 {
-  font-size: 4em;
+  font-size: 64px;
 }
 
 .banner p {
@@ -112,12 +112,12 @@ h1, h2, h3, h5 {
         #About
 ---------------------*/
 .section-header {
-  font-size: 2.5em;
+  font-size: 40px;
   color: #737373;
   text-transform: uppercase;
   text-align: center;
   position: relative;
-  padding-bottom: 0.5em;
+  padding-bottom: 8px;
 }
 
 .underline {
@@ -184,7 +184,7 @@ h1, h2, h3, h5 {
 }
 
 .new-p {
-  margin-top: 1.5em;
+  margin-top: 24px;
 }
 
 .about-intro a, .project-info a {
@@ -213,8 +213,8 @@ h1, h2, h3, h5 {
 .skills-item {
  display: flex;
  align-items: flex-start;
- line-height: 1.5em;
- margin-bottom: 1.5em;
+ line-height: 1.5;
+ margin-bottom: 24px;
 }
 
 .skills-item .skills-item-content {
@@ -225,13 +225,13 @@ h1, h2, h3, h5 {
 .skills-item h5, .detail h4 {
   text-transform: uppercase;
   letter-spacing: 0.15em;
-  margin-bottom: 1em;
+  margin-bottom: 16px;
   color: #333333;
   font-weight: bold;
 }
 
 .tech {
-  margin-bottom: 3em;
+  margin-bottom: 48px;
 }
 
 .skills-icon {
@@ -285,7 +285,7 @@ h1, h2, h3, h5 {
 }
 
 .project h3 {
-  font-size: 1.25em;
+  font-size: 20px;
   text-transform: uppercase;
   font-weight: bold;
   color: #662871;
@@ -304,8 +304,8 @@ h1, h2, h3, h5 {
   height: 100%;
   padding: 0 10px;
   background-color: #ffffff;
-  font-size: 1em;
-  line-height: 1.5em;
+  font-size: 16px;
+  line-height: 1.5;
   text-align: center;
   overflow: hidden;
   -webkit-transform: scale(0);
@@ -360,7 +360,7 @@ h1, h2, h3, h5 {
   border-radius: 3px;
   padding: 0 0.625em;
   margin-right: 0.625em;
-  margin-top: 1em;
+  margin-top: 14px;
 }
 
 /* --------------------
@@ -398,7 +398,7 @@ h1, h2, h3, h5 {
 
 .form input {
   margin: 0.33em 0 0.66em 0;
-  font-size: 0.9em;
+  font-size: 14px;
   padding: 0.55em;
   border: none;
   border-radius: 3px;
@@ -409,7 +409,7 @@ h1, h2, h3, h5 {
 .form textarea {
   min-height: 180px;
   margin-top: 0.33em;
-  font-size: 0.9em;
+  font-size: 14px;
   padding: 0.55em;
   border: none;
   border-radius: 3px;
@@ -521,10 +521,10 @@ footer div p:first-of-type {
 
 @media screen and (min-width: 761px) {
   .navlink-wrapper a {
-    margin: 1.25em 0 1.25em 1.25em;
+    margin: 20px 0 20px 20px;
   }
   .container {
-    padding: 3.125em 0;
+    padding: 50px 0;
   }
   .about-intro {
     width: 90%;
