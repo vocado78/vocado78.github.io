@@ -164,9 +164,9 @@ h1, h2, h3, h5 {
 }
 
 /* --------------------
-        #What and skills
+        #Skills
 ---------------------*/
-.skills-wrapper {
+.skills-wrapper, .project-wrapper, .form, footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -209,16 +209,9 @@ h1, h2, h3, h5 {
         #Projects
 ---------------------*/
 .project-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .project {
@@ -337,13 +330,6 @@ h1, h2, h3, h5 {
 }
 
 .form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   padding: 0 5%;
 }
 
@@ -431,10 +417,6 @@ h1, h2, h3, h5 {
 footer {
   height: 150px;
   background-color: #1a1a1a;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
