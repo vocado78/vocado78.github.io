@@ -1,4 +1,4 @@
-* {
+* { 
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -28,7 +28,7 @@ h1, h2, h3, h5 {
   margin: 0 auto;
 }
 
-.banner-text, .skills-wrapper, .project-wrapper, .project, .project-info, .form, footer {
+.banner-text, .skills-wrapper, .project-wrapper, .project, .project-info, .form, footer, .row-item, .details, .details a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -48,6 +48,7 @@ h1, h2, h3, h5 {
   z-index: 3;
   background-color: transparent;
   -webkit-transition: all 0.75s;
+  -o-transition: all 0.75s;
   transition: all 0.75s;
 }
 
@@ -82,8 +83,12 @@ h1, h2, h3, h5 {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .banner::before {
@@ -94,14 +99,16 @@ h1, h2, h3, h5 {
   left: 0;
   bottom: 0;
   background: #662871; /* Old browsers */
-  background: -moz-linear-gradient(left, #008080 1%, #662871 70%); /* FF3.6-15 */
   background: -webkit-linear-gradient(left, #008080 1%,#662871 70%); /* Chrome10-25,Safari5.1-6 */
+  background: -o-linear-gradient(left, #008080 1%,#662871 70%);
   background: linear-gradient(to right, #008080 1%,#662871 70%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   opacity: 0.85;
 }
 
 .banner-text {
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   z-index: 2;
   min-height: 125px;
   color: #ffffff;
@@ -133,8 +140,8 @@ h1, h2, h3, h5 {
   height: 3px;
   margin: 0 auto 80px auto;
   background: #662871; /* Old browsers */
-  background: -moz-linear-gradient(left, #008080 1%, #662871 70%); /* FF3.6-15 */
   background: -webkit-linear-gradient(left, #008080 1%,#662871 70%); /* Chrome10-25,Safari5.1-6 */
+  background: -o-linear-gradient(left, #008080 1%,#662871 70%);
   background: linear-gradient(to right, #008080 1%,#662871 70%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
@@ -172,14 +179,20 @@ h1, h2, h3, h5 {
         #Skills
 ---------------------*/
 .skills-item {
+ display: -webkit-box;
+ display: -ms-flexbox;
  display: flex;
- align-items: flex-start;
+ -webkit-box-align: start;
+     -ms-flex-align: start;
+         align-items: flex-start;
  line-height: 1.5;
  margin-bottom: 32px;
 }
 
 .skills-item .skills-item-content {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   padding: 0 25px;
 }
 
@@ -206,21 +219,34 @@ h1, h2, h3, h5 {
 }
 
 .project {
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
-  max-width: 375px;
+  width: 340px;
+  /* width: 375px; */
   height: 450px;
   background-color: #ffffff;
   margin: 8px;
   position: relative;
   border-radius: 2px;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
 }
 
 .project-img-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 120px;
   height: 120px;
   background: #662871;
@@ -240,8 +266,11 @@ h1, h2, h3, h5 {
 }
 
 .project-info {
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -258,6 +287,7 @@ h1, h2, h3, h5 {
   -ms-transform: scale(0);
   transform: scale(0);
   -webkit-transition: 0.75s ease;
+  -o-transition: 0.75s ease;
   transition: 0.75s ease;
 }
 
@@ -322,13 +352,15 @@ h1, h2, h3, h5 {
 }
 
 .form-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .row-item {
-  display: flex;
-  flex-direction: column;
   width: 48%;
 }
 
@@ -368,17 +400,17 @@ h1, h2, h3, h5 {
 }
 
 .details {
-  display: flex;
-  flex-direction: column;
   max-width: 960px;
   margin: 100px auto 65px auto;
 }
 
 .details a {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-decoration: none;
+  /* For Safari */
+  text-align: center;
 }
 
 .details a:hover {
@@ -414,6 +446,8 @@ footer {
 }
 
 footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: 24px;
 }
@@ -441,6 +475,10 @@ footer div p:first-of-type {
       Media queries
 ---------------------*/
 
+@media screen and (min-width: 376px) {
+
+}
+
 @media screen and (min-width: 761px) {
   .container {
     padding: 120px 16px;
@@ -461,17 +499,20 @@ footer div p:first-of-type {
   .project-wrapper {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .project {
-    width: 375px;
+    /* width: 375px; */
     margin: 20px;
   }
   .form {
     padding: 0 10%;
   }
   .details {
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .details a {
     width: 175px;
@@ -497,12 +538,16 @@ footer div p:first-of-type {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
   .skills-item {
-    flex: 1 1 350px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 350px;
+            flex: 1 1 350px;
   }
 }
 
