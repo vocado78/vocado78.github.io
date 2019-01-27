@@ -175,13 +175,15 @@ h1, h2, h3, h5 {
   border-radius: 50%;
 }
 
-.about-wrapper p {
-  line-height: 1.5;
-}
-
-.about-wrapper p:first-of-type {
+.about-wrapper h3 {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-weight: normal;
   font-size: 20px;
   color: #008080;
+}
+
+.about-wrapper p {
+  line-height: 1.5;
 }
 
 .new-p {
@@ -528,7 +530,7 @@ footer div p:first-of-type {
   }
   .portrait-wrapper {
     float: right;
-    margin: 32px 0 0 24px;
+    margin: 72px 0 0 24px;
   }
   .project-wrapper, .details {
     -webkit-box-orient: horizontal;
@@ -566,6 +568,12 @@ footer div p:first-of-type {
     width: 960px;
     margin: 0 auto;
     padding: 0;
+  }
+  .about-wrapper {
+    padding: 0 32px;
+  }
+  .portrait-wrapper {
+    margin: 72px 0 16px 32px;
   }
   .skills-wrapper {
     -webkit-box-orient: horizontal;
