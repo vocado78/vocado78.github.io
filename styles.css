@@ -184,6 +184,7 @@ h1, h2, h3, h5 {
 
 .about-wrapper p {
   line-height: 1.5;
+  text-align: justify;
 }
 
 .new-p {
@@ -530,7 +531,7 @@ footer div p:first-of-type {
   }
   .portrait-wrapper {
     float: right;
-    margin: 72px 0 0 24px;
+    margin: 72px 0 0 32px;
   }
   .project-wrapper, .details {
     -webkit-box-orient: horizontal;
@@ -571,9 +572,6 @@ footer div p:first-of-type {
   }
   .about-wrapper {
     padding: 0 32px;
-  }
-  .portrait-wrapper {
-    margin: 72px 0 16px 32px;
   }
   .skills-wrapper {
     -webkit-box-orient: horizontal;
