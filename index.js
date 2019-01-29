@@ -50,17 +50,12 @@ var callback = function() {
   function isScrolledIntoView() {
     var elements = Array.from(document.getElementsByClassName("skills-item"));
     elements.forEach(function(element, i) {
-      // var rect = element.getBoundingClientRect();
       var elementTop = element.getBoundingClientRect().top;
       var elementBottom = element.getBoundingClientRect().bottom;
       var isVisible = elementTop >= 0 && elementBottom <= window.innerHeight;
 
-      if (isVisible && i % 2 === 0) {
-        element.classList.add("animate-left");
-      }
-
-      if (isVisible && i % 2 !== 0) {
-        element.classList.add("animate-right");
+      if (isVisible) {
+        element.classList.add("animate");
       }
     });
   };
