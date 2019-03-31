@@ -7,7 +7,7 @@
 }
 
 body {
-  font-size: 16px;
+  font-size: 18px;
   font-family: 'Roboto', 'Arial', sans-serif;
   color: #ffffff;
 }
@@ -27,19 +27,10 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-     -ms-flex-pack: justify;
-    justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .banner::before {
@@ -49,11 +40,13 @@ h1 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: #662871; /* Old browsers */
-  background: -webkit-linear-gradient(left, #008080 1%,#662871 70%); /* Chrome10-25,Safari5.1-6 */
-  background: -o-linear-gradient(left, #008080 1%,#662871 70%);
-  background: linear-gradient(to right, #00b3b3 1%,#770f8a 70%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  opacity: 0.75;
+  background: #770f8a;
+  /* Chrome10-25, Safari5.1-6 */
+  background: -webkit-linear-gradient(left, #ff7b00 1%,#770f8a 70%); 
+  background: -o-linear-gradient(left, #ff7b00 1%,#770f8a 70%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ 00b3b3*/
+  background: linear-gradient(to right, #ff7b00 1%,#770f8a 70%); 
+  opacity: 0.80;
 }
 
 .banner-text {
@@ -63,22 +56,14 @@ h1 {
 }
 
 .banner-text h1 {
-  font-size: 64px;
-}
-
-.banner-text p {
-  font-size: 22px;
+  font-size: 56px;
 }
 
 .links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   z-index: 2;
-  margin: 40px 0 0 0;
+  margin: 32px 0 0 0;
   text-decoration: none;
   list-style: none;
   width: 200px;
@@ -95,13 +80,10 @@ h1 {
 
 .icon:hover {
   -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
 
 .footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: 100px 0 0 0 ;
   font-size: 14px;
