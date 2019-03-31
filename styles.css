@@ -9,16 +9,20 @@
 body {
   font-size: 18px;
   font-family: 'Roboto', 'Arial', sans-serif;
-  color: #ffffff;
+  color: #fff;
+  text-shadow: -1px 0 #770f8a, 0 1px #770f8a, 1px 0 #770f8a, 0 -1px #770f8a;
 }
 
 h1 {
   font-family: 'Raleway', 'Arial', sans-serif;
+  font-size: 56px;
 }
 
-/* --------------------
-        Header
----------------------*/
+.banner, .links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .banner {
   height: 100vh;
@@ -27,15 +31,13 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  
 }
 
 .banner::before {
   content: '';
-	position: absolute;
+  position: absolute;
   top: 0;
   right: 0;
   left: 0;
@@ -55,10 +57,6 @@ h1 {
   min-height: 125px;
 }
 
-.banner-text h1 {
-  font-size: 56px;
-}
-
 .links {
   display: flex;
   justify-content: space-between;
@@ -70,10 +68,7 @@ h1 {
 }
 
 .links a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid #ffffff;
+  border: 2px solid #fff;
   border-radius: 100%;
   padding: 12px;
 }
