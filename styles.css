@@ -98,11 +98,13 @@ h1, h2, h3, h5 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: #662871; /* Old browsers */
-  background: -webkit-linear-gradient(left, #008080 1%,#662871 70%); /* Chrome10-25,Safari5.1-6 */
-  background: -o-linear-gradient(left, #008080 1%,#662871 70%);
-  background: linear-gradient(to right, #008080 1%,#662871 70%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  opacity: 0.85;
+  background: #770f8a;
+  /* Chrome10-25, Safari5.1-6 */
+  background: -webkit-linear-gradient(left, #ff7b00 1%,#770f8a 70%); 
+  background: -o-linear-gradient(left, #ff7b00 1%,#770f8a 70%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ 00b3b3*/
+  background: linear-gradient(to right, #ff7b00 1%,#770f8a 70%);
+  opacity: 0.80;
 }
 
 .banner-text {
