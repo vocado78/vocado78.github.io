@@ -28,7 +28,7 @@ h1, h2, h3, h5 {
   margin: 0 auto;
 }
 
-.banner-text, .about-wrapper, .skills-wrapper, .project-wrapper, .project, .project-info, .form, footer, .row-item, .details, .details a {
+.banner-text, .about-wrapper, .skills-wrapper, .project-wrapper, .project, .project-info, .form, footer, .row-item, .social a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -202,7 +202,7 @@ h1, h2, h3, h5 {
   padding: 0 25px;
 }
 
-.skills-item h5, .details h4 {
+.skills-item h5, .social h4 {
   text-transform: uppercase;
   letter-spacing: 0.15em;
   margin-bottom: 16px;
@@ -397,35 +397,38 @@ h1, h2, h3, h5 {
   margin-bottom: 10px;
 }
 
-.details {
-  max-width: 960px;
+.social {
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-between;
+  max-width: 480px;
   margin: 100px auto 65px auto;
+  list-style-type: none;
 }
 
-.details a {
+.social a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
+  border: 2px solid #ff7b00;
+  border-radius: 50%;
+  padding: 12px;
   /* For Safari */
   text-align: center;
 }
 
-.details a:hover {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
+.social-icon:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
-.details-icon {
-  width: 32px;
-}
-
-.details h4 {
+/* .social h4 {
   color: #ff7b00;
   padding-top: 10px;
   letter-spacing: 0.1em;
-}
+} */
 
 /* --------------------
         Footer
@@ -514,7 +517,7 @@ footer div p:first-of-type {
   .animate {
     animation: 2s both slide-in;
   }
-  .about-wrapper, .project-wrapper, .details {
+  .about-wrapper, .project-wrapper {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -538,13 +541,6 @@ footer div p:first-of-type {
   }
   .project {
     margin: 20px;
-  }
-  .details {
-    -ms-flex-pack: distribute;
-        justify-content: space-between;
-  }
-  .details a {
-    width: 175px;
   }
 }
 
