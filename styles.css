@@ -264,7 +264,7 @@ h1, h2, h3, h5 {
   font-size: 20px;
   text-transform: uppercase;
   font-weight: bold;
-  color: #770f8a;
+  color: #333333;
 }
 
 .project-info {
@@ -333,8 +333,8 @@ h1, h2, h3, h5 {
 .tags-container li {
   font-size: 14px;
   background-color: #ffffff;
-  color: #770f8a;
-  border: 1px solid #770f8a;
+  color: #333333;
+  border: 1px solid #333333;
   border-radius: 3px;
   padding: 0 0.625em;
   margin-right: 0.625em;
