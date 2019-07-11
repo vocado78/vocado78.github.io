@@ -1,25 +1,21 @@
-var callback = function() {
-  // Handler when the DOM is fully loaded
-  function activeLink() {
-    var scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
-    var sections = document.getElementsByClassName("section");
-    var sectionsArr = Array.from(sections);
-    var sectionTops = sectionsArr.map(function (section) {
-      return section.offsetTop;
-    });
-    var navLinks = document.getElementsByClassName("nav");
-    var navLinksArr = Array.from(navLinks);
-    var mapTopToLink = {};
-    sectionTops.forEach(function (top, i) {
-      mapTopToLink[top] = navLinksArr[i];
-    });
-    sectionTops.forEach(function (top) {
-      if (scrollPosition >= (top - 50)) {
-        var navLink = mapTopToLink[top];
+const callback = () => {
+  const form = document.getElementsByClassName("form")[0];
+  let lastScrollTop = 0;
+
+  const activeLink = () => {
+    const scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+    const sections = Array.from(document.getElementsByClassName("section"));
+    const sectionTops = sections.map(section => section.offsetTop);
+    const navLinks = Array.from(document.getElementsByClassName("nav"));
+    let mapTopToLink = {};
+
+    sectionTops.forEach((top, i) => mapTopToLink[top] = navLinks[i]);
+
+    sectionTops.forEach((top) => {
+      if (scrollPosition >= (top - 50)) { // what is 50??? no arbitrary nums
+        let navLink = mapTopToLink[top];
         if (!navLink.classList.contains("active")) {
-          navLinksArr.forEach(function (navLink) {
-            navLink.classList.remove("active");
-          });
+          navLinks.forEach(navLink => navLink.classList.remove("active"));
           navLink.classList.add("active");
         }
         return false;
@@ -27,72 +23,69 @@ var callback = function() {
     });
   };
 
-  var lastScrollTop = 0;
-  function menuChange() {
-    var aboutTop = (document.getElementsByClassName("break")[0].offsetTop +
-      document.getElementsByClassName("break")[0].scrollHeight) - 100;
-    var currScrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
-    var menu = document.getElementsByClassName("menu")[0];
-    if (currScrollTop > aboutTop) {
+  const menuChange = () => {
+    const tagLineTop = document.getElementsByClassName("tag-line")[0].offsetTop;
+    const currScrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+    let menu = document.getElementsByClassName("menu")[0];
+
+    if (currScrollTop > tagLineTop) {
       menu.style.top = "-100%";
     }
-    if (currScrollTop < lastScrollTop && currScrollTop > aboutTop) {
+
+    if (currScrollTop < lastScrollTop && currScrollTop > tagLineTop) {
       menu.style.top = "0";
       menu.style.backgroundColor = "#1a1a1a";
     }
-    if (currScrollTop < lastScrollTop && currScrollTop < aboutTop) {
+
+    if (currScrollTop < lastScrollTop && currScrollTop < tagLineTop) {
       menu.style.top = "0";
       menu.style.backgroundColor = "transparent";
     }
     lastScrollTop = currScrollTop;
   };
 
-  function isScrolledIntoView() {
-    var elements = Array.from(document.getElementsByClassName("skills-item"));
-    elements.forEach(function(element, i) {
-      var elementTop = element.getBoundingClientRect().top;
-      var elementBottom = element.getBoundingClientRect().bottom;
-      var isVisible = elementTop >= 0 && elementBottom <= window.innerHeight;
+  const isScrolledIntoView = () => {
+    const skills = Array.from(document.getElementsByClassName("skills-item"));
+
+    skills.forEach((skill, i) => {
+      const skillTop = skill.getBoundingClientRect().top;
+      const skillBottom = skill.getBoundingClientRect().bottom;
+      const isVisible = skillTop >= 0 && skillBottom <= window.innerHeight;
 
       if (isVisible) {
-        element.classList.add("animate");
+        skill.classList.add("animate");
       }
     });
   };
 
-  document.body.onscroll = function () {
+  document.body.onscroll = () => {
     activeLink();
     menuChange();
     isScrolledIntoView();
   };
 
-  function formValidation() {
-    var form = document.getElementsByTagName("FORM")[0];
-    var name = document.getElementById("name");
-    var email = document.getElementById("email");
-    var message = document.getElementById("message");
-    var errorName = document.getElementsByClassName("error-name")[0];
-    var errorEmail = document.getElementsByClassName("error-email")[0];
-    var errorMsg = document.getElementsByClassName("error-msg")[0];
-
-    form.addEventListener("submit", function (event) {
-      var emailRegExp = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-      if (name.value.length === 0 || name.value.length > 250) {
-        errorName.innerHTML = "Please enter your name. The name field is required and can have a maximum of 250 characters.";
-        event.preventDefault();
-      }
-      if (email.value.length === 0 || !emailRegExp.test(email.value)) {
-        errorEmail.innerHTML = "Please enter your e-mail address. The email field is required and must contain a valid e-mail address.";
-        event.preventDefault();
-      }
-      if (message.value.length === 0 || message.value.length > 1000) {
-        errorMsg.innerHTML = "Please write a message. The message field is required and can have a maximum of 1000 characters.";
-        event.preventDefault();
-      }
-    }, false);
-  };
-  formValidation();
-
+  form.addEventListener("submit", (e) => {
+    const name = document.getElementById("name");
+    const email = document.getElementById("email");
+    const message = document.getElementById("message");
+    const errorName = document.getElementsByClassName("error-name")[0];
+    const errorEmail = document.getElementsByClassName("error-email")[0];
+    const errorMsg = document.getElementsByClassName("error-msg")[0];
+    const emailRegEx = /^([0-9a-zA-Z]([.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$/;
+    
+    if (name.value.length === 0 || name.value.length > 101) {
+      errorName.innerHTML = "Please enter your name. The name field is required and can have a maximum of 100 characters.";
+      e.preventDefault();
+    }
+    if (!emailRegEx.test(email.value)) {
+      errorEmail.innerHTML = "Please enter your e-mail address. The email field is required and must contain a valid e-mail address.";
+      e.preventDefault();
+    }
+    if (message.value.length === 0 || message.value.length > 751) {
+      errorMsg.innerHTML = "Please write a message. The message field is required and can have a maximum of 750 characters.";
+      e.preventDefault();
+    }
+  }, false);
 };
 
 if (

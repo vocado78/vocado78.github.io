@@ -28,7 +28,7 @@
     </nav>
     <div class="banner">
       <div class="banner-text">
-        <h1 class="break">Never Give Up</h1>
+        <h1 class="tag-line">Never Give Up</h1>
         <p>— whether it’s climbing a mountain or completing your project</p>
       </div> <!-- class="banner-text" -->
     </div> <!-- class="banner" -->
@@ -209,21 +209,21 @@
   <section id="contact" class="container section" style="background-color:#ffffff">
     <h2 class="section-header">Get in touch</h2>
     <div class="underline"></div>
-    <form class="form" action="https://formspree.io/hedeliningrid@gmail.com" method="post">
+    <form class="form" action="https://formspree.io/hedeliningrid@gmail.com" method="post" novalidate>
       <div class="form-row">
         <div class="row-item">
           <label for="name">Name*</label>
-          <input type="text" id="name" name="name" maxlength="250" required>
+          <input type="text" id="name" name="name">
           <span class="error-name" aria-live="polite"></span>
         </div>
         <div class="row-item">
           <label for="email">E-mail address*</label>
-          <input type="email" id="email" name="_replyto" required>
+          <input type="email" id="email" name="_replyto">
           <span class="error-email" aria-live="polite"></span>
         </div>
       </div>
       <label for="message">Message*</label>
-      <textarea name="message" id="message" maxlength="1000" required></textarea>
+      <textarea name="message" id="message"></textarea>
       <span class="error-msg" aria-live="polite"></span>
       <button type="submit" class="submit">Send Message</button>
     </form>
