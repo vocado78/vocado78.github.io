@@ -24,7 +24,7 @@ const callback = () => {
   };
 
   const menuChange = () => {
-    const tagLineTop = document.getElementsByClassName("tag-line")[0].offsetTop;
+    const tagLineTop = document.getElementsByClassName("banner-text")[0].offsetTop;
     const currScrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
     let menu = document.getElementsByClassName("menu")[0];
 

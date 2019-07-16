@@ -112,17 +112,16 @@ h1, h2, h3, h5 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   z-index: 2;
-  min-height: 125px;
   color: #ffffff;
   padding: 0 16px;
 }
 
-.banner h1 {
+.banner-text h1 {
   font-size: 64px;
 }
 
-.banner p {
-  font-size: 22px;
+.banner-text p {
+  font-size: 32px;
 }
 
 /* --------------------
@@ -510,6 +509,9 @@ footer div p:first-of-type {
   }
   .banner-text {
     padding: 0 40px;
+  }
+  .banner-text p {
+    margin-left: 24px;
   }
   .portrait-wrapper {
     margin: 80px 0 0 32px;
