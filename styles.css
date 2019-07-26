@@ -148,9 +148,8 @@ h1, h2, h3, h5 {
 
 .portrait-wrapper {
   width: auto;
-  /* height: 245px; */
-  border: 1px solid red;
-  /* margin: 0 auto 48px auto; */
+  height: auto;
+  margin: 0 auto 1.5em auto;
 }
 
 .portrait {
