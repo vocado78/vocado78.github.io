@@ -8,6 +8,7 @@
 
 body {
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 body, .form input, .form textarea, .btn-submit {
@@ -22,7 +23,7 @@ h1, h2, h3, h5 {
 .container {
   padding: 80px 16px;
 }
-
+/* .skills-wrapper, */
 .navlink-wrapper, .about-wrapper, .skills-wrapper, .form {
   max-width: 960px;
   margin: 0 auto;
@@ -500,7 +501,7 @@ footer div p:first-of-type {
   }
 }
 
-@media screen and (min-width: 761px) {
+@media screen and (min-width: 768px) {
   @keyframes slide-in {
     0% {
       transform: translateX(100vw)
@@ -527,15 +528,6 @@ footer div p:first-of-type {
   .banner-text p {
     margin-left: 24px;
   }
-  .skills-wrapper {
-    overflow-x: hidden;
-  }
-  .skills-item {
-    transform: translateX(100vw);
-  }
-  .animate {
-    animation: 2s both slide-in;
-  }
   .about-wrapper {
     flex-direction: row;
     padding: 0;
@@ -544,6 +536,33 @@ footer div p:first-of-type {
   .column1, .column2 {
     width: calc(50% - 1.5em);
     padding: 0;
+  }
+  .skills-item {
+    flex-direction: row-reverse;
+    width: 50%;
+    text-align: justify;
+    margin-left: 20px;
+    transform: translateX(100vw);
+  }
+  .skills-item .skills-item-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0 1.5em 0 0;
+  }
+  .skills-item:nth-child(2n) .skills-item-content {
+    align-items: flex-start;
+    padding: 0 0 0 1.5em;
+  }
+  .skills-item:nth-child(2n) {
+    flex-direction: row;
+    margin-left: calc(50% - 20px);
+  }
+  .skills-icon {
+    align-self: center;
+  }
+  .animate {
+    animation: 2s both slide-in;
   }
   .project-wrapper {
     -webkit-box-orient: horizontal;
@@ -615,28 +634,10 @@ footer div p:first-of-type {
   .column2 {
     margin-left: -300px;
   }
-  .skills-wrapper {
-    max-width: 1024px;
-  }
-  .skills-item {
-    flex-direction: row-reverse;
-    width: 50%;
-    text-align: justify;
-    margin-left: 20px;
-  }
-  .skills-item-content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+  .skills-item .skills-item-content {
+    padding: 0 2.5em 0 0;
   }
   .skills-item:nth-child(2n) .skills-item-content {
-    align-items: flex-start;
-  }
-  .skills-item:nth-child(2n) {
-    flex-direction: row;
-    margin-left: calc(50% - 20px);
-  }
-  .skills-icon {
-    align-self: center;
+    padding: 0 0 0 2.5em;
   }
 }
