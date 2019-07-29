@@ -172,8 +172,8 @@ h1, h2, h3, h5 {
   display: none;
 }
 
-.about-wrapper h5 {
-  display: inline;
+.about-wrapper h5, .skills-wrapper h5 {
+  display: inline-block;
   text-transform: uppercase;
   letter-spacing: 0.15em;
   color: #333333;
@@ -183,7 +183,7 @@ h1, h2, h3, h5 {
 }
 
 .about-wrapper p {
-  line-height: 1.7;
+  line-height: 1.5;
   text-align: justify;
 }
 
@@ -215,7 +215,7 @@ h1, h2, h3, h5 {
   -webkit-box-align: start;
     -ms-flex-align: start;
       align-items: flex-start;
-  line-height: 1.7;
+  line-height: 1.5;
   margin-bottom: 32px;
 }
 
@@ -226,17 +226,13 @@ h1, h2, h3, h5 {
   padding: 0 25px;
 }
 
-.skills-item h5, .social h4 {
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  margin-bottom: 16px;
-  color: #333333;
-  font-weight: bold;
+.skills-item p {
+  margin-top: 1em;
 }
 
 .skills-icon {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 
 /* --------------------
@@ -531,6 +527,9 @@ footer div p:first-of-type {
   .banner-text p {
     margin-left: 24px;
   }
+  .skills-wrapper {
+    overflow-x: hidden;
+  }
   .skills-item {
     transform: translateX(100vw);
   }
@@ -599,13 +598,13 @@ footer div p:first-of-type {
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    margin: 1em 0 1em 1em;
+    margin: 2em 0 2em 2em;
     shape-outside: circle(50%);
   }
   .column2 img {
     float: left;
     clear: left;
-    margin: 1em 1em 1em 0;
+    margin: 2em 2em 2em 0;
   }
   .column1 p, .column1 h5 {
     margin-right: 182px;
@@ -617,22 +616,27 @@ footer div p:first-of-type {
     margin-left: -300px;
   }
   .skills-wrapper {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    max-width: 1024px;
   }
   .skills-item {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 350px;
-            flex: 1 1 350px;
+    flex-direction: row-reverse;
+    width: 50%;
+    text-align: justify;
+    margin-left: 20px;
+  }
+  .skills-item-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .skills-item:nth-child(2n) .skills-item-content {
+    align-items: flex-start;
   }
   .skills-item:nth-child(2n) {
-    animation-delay: 1s;
+    flex-direction: row;
+    margin-left: calc(50% - 20px);
+  }
+  .skills-icon {
+    align-self: center;
   }
 }
