@@ -23,7 +23,7 @@ h1, h2, h3, h5 {
 .container {
   padding: 80px 16px;
 }
-/* .skills-wrapper, */
+
 .navlink-wrapper, .about-wrapper, .skills-wrapper, .form {
   max-width: 960px;
   margin: 0 auto;
