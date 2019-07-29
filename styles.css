@@ -16,7 +16,7 @@ body, .form input, .form textarea, .btn-submit {
   color: #595959;
 }
 
-h1, h2, h3, h5 {
+h1, h2, h3, h5, .banner-text p {
   font-family: 'Raleway', 'Arial', sans-serif;
 }
 
@@ -109,20 +109,21 @@ h1, h2, h3, h5 {
 }
 
 .banner-text {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   z-index: 2;
   color: #ffffff;
   padding: 0 16px;
 }
 
 .banner-text h1 {
-  font-size: 64px;
+  font-size: 3.75em;
+  text-transform: uppercase;
+  letter-spacing: -3px;
+  font-weight: 600;
 }
 
 .banner-text p {
-  font-size: 32px;
+  font-size: 1.5em;
+  margin: 1em 0 1.5em;
 }
 
 /* --------------------
@@ -524,9 +525,6 @@ footer div p:first-of-type {
   }
   .banner-text {
     padding: 0 40px;
-  }
-  .banner-text p {
-    margin-left: 24px;
   }
   .about-wrapper {
     flex-direction: row;
