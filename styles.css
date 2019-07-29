@@ -538,10 +538,8 @@ footer div p:first-of-type {
     animation: 2s both slide-in;
   }
   .about-wrapper {
-    max-width: 768px;
     flex-direction: row;
     padding: 0;
-    margin: 0 auto;
     justify-content: space-between;
   }
   .column1, .column2 {
@@ -571,8 +569,8 @@ footer div p:first-of-type {
   .navlink-wrapper a:last-of-type {
     margin-right: 0;
   }
-  .banner-text, .about-wrapper {
-    max-width: 960px;
+  .banner-text {
+    width: 960px;
     margin: 0 auto;
     padding: 0;
   }
