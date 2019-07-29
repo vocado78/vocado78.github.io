@@ -21,10 +21,10 @@ h1, h2, h3, h5, .banner-text p {
 }
 
 .container {
-  padding: 80px 16px;
+  padding: 80px 2em;
 }
 
-.navlink-wrapper, .about-wrapper, .skills-wrapper, .form {
+.navlink-wrapper, .about-wrapper, .skills-wrapper {
   max-width: 960px;
   margin: 0 auto;
 }
@@ -149,7 +149,7 @@ h1, h2, h3, h5, .banner-text p {
 }
 
 .about-wrapper {
-  padding: 0 26px;
+  padding: 0 1.5em;
 }
 
 .portrait-wrapper {
@@ -322,13 +322,16 @@ h1, h2, h3, h5, .banner-text p {
   color: #ff7b00;
 }
 
-.project-btn {
-  width: 150px;
-  padding: 5px;
-  background: #ff7b00;
+.project-btn, .submit {
+  text-transform: uppercase;
+  padding: 0.2em 1.5em;
   color: #ffffff;
+  border-radius: 2px;
+}
+
+.project-btn {
+  background: #ff7b00;
   border: 2px solid #ff7b00;
-  border-radius: 3px;
 }
 
 .project-btn:hover, .submit:hover {
@@ -374,6 +377,11 @@ h1, h2, h3, h5, .banner-text p {
   padding-bottom: 0; 
 }
 
+.form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 .form-row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -392,7 +400,7 @@ h1, h2, h3, h5, .banner-text p {
   font-size: 15px;
   padding: 8px;
   border: none;
-  border-radius: 3px;
+  border-radius: 2px;
   background-color: #e6e6e6;
   color: #000000;
 }
@@ -405,15 +413,10 @@ h1, h2, h3, h5, .banner-text p {
 
 .submit {
   font-size: 16px;
-  text-transform: uppercase;
-  padding: 12px 0;
   background: #770f8a;
-  color: #ffffff;
   border: 2px solid #770f8a;
-  border-radius: 3px;
   margin: 32px auto 0 auto;
-  width: 100%;
-  letter-spacing: 0.1em;
+  padding: 0.5em 1.5em;
 }
 
 .submit:hover {
@@ -510,6 +513,9 @@ footer div p:first-of-type {
   }
   .container {
     padding: 120px 40px;
+  }
+  #about, #projects {
+    padding: 120px 65px;
   }
   .navlink-wrapper a {
     margin: 20px 16px;
