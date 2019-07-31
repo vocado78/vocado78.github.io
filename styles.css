@@ -103,7 +103,7 @@ h1, h2, h3, h5, .banner-text p {
   /* Chrome10-25, Safari5.1-6 */
   background: -webkit-linear-gradient(left, #ff7b00 1%,#770f8a 70%); 
   background: -o-linear-gradient(left, #ff7b00 1%,#770f8a 70%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ 00b3b3*/
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   background: linear-gradient(to right, #ff7b00 1%,#770f8a 70%);
   opacity: 0.80;
 }
@@ -111,7 +111,7 @@ h1, h2, h3, h5, .banner-text p {
 .banner-text {
   z-index: 2;
   color: #ffffff;
-  padding: 0 16px;
+  padding: 0 2em;
 }
 
 .banner-text h1 {
@@ -501,6 +501,18 @@ footer div p:first-of-type {
       Media queries
 ---------------------*/
 
+@media screen and (min-width: 425px) {
+  .banner-text p {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 686px) {
+  .banner-text p {
+    width: 65%;
+  }
+}
+
 @media screen and (min-width: 768px) {
   @keyframes slide-in {
     0% {
@@ -525,8 +537,8 @@ footer div p:first-of-type {
   .banner {
     background-image: url("./images/banner-large.jpg");
   }
-  .banner-text {
-    padding: 0 40px;
+  .banner-text p {
+    width: 60%;
   }
   .about-wrapper {
     flex-direction: row;
@@ -575,6 +587,9 @@ footer div p:first-of-type {
     width: 960px;
     margin: 0 auto;
     padding: 0;
+  }
+  .banner-text p {
+    width: 45%;
   }
   .about-wrapper {
     justify-content: center;
