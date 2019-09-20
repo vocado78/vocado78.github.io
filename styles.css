@@ -17,11 +17,12 @@ body {
 
 body, .form input, .form textarea, .btn-submit {
   font-family: 'Roboto', 'Arial', sans-serif;
-  color: #595959;
+  color: #fff;
 }
 
 h1, h2, h3, .banner-text p {
   font-family: 'Raleway', 'Arial', sans-serif;
+  font-size: 56px;
 }
 
 .container {
@@ -87,17 +88,13 @@ h1, h2, h3, .banner-text p {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  
 }
 
 .banner::before {
   content: '';
-	position: absolute;
+  position: absolute;
   top: 0;
   right: 0;
   left: 0;
@@ -471,9 +468,7 @@ footer {
   text-align: center;
 }
 
-footer div {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.footer {
   display: flex;
 }
 
