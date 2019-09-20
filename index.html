@@ -6,41 +6,199 @@
   <meta name='viewport' content='width=device-width, initial-scale=1.0' />
   <meta property="og:title" content="Ingrid Hedelin | Front-end Developer" />
   <meta property="og:url" content="https://www.ingridhedelin.com/" />
-  <meta property="og:description" content="My goal is to build functional, fast, and user-friendly websites and apps. I like to keep things simple
+  <meta property="og:description" content="My goal is to build functional and user-friendly websites and apps. I like to keep things simple
   and write well-organised, clean code that is easy to maintain." />
   <meta property="og:image" content="https://www.ingridhedelin.com/images/banner-medium.jpg" />
-  <title>Ingrid Hedelin | Front-end Developer</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto%7CRaleway" rel="stylesheet" />
+  <title>Ingrid Hedelin | Front-end Developer in Vancouver, BC</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,600|Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <div class="banner">
-    <div class="banner-text">
-      <h1>I'll be back soon</h1>
-      <p>This website is getting a make-over. A new version will be here soon.<p>
+  <header>
+    <nav class="menu section">
+      <div class="navlink-wrapper">
+        <a class="nav" href="#"></a>
+        <a class="nav" href="#about">About</a>
+        <a class="nav" href="#skills">Skills</a>
+        <a class="nav" href="#projects">Projects</a>
+        <a class="nav" href="#contact">Contact</a>
+      </div> <!-- class="navlink-wrapper" -->
+    </nav>
+    <div class="banner">
+      <div class="banner-text">
+        <h1>Hello, I'm Ingrid</h1>
+        <p>A Front-end Developer with true grit who spreads positive vibes</p>
+      </div> <!-- class="banner-text" -->
+    </div> <!-- class="banner" -->
+  </header>
+
+  <section id="about" class="container section" style="background-color:#f2f2f2">
+    <h2 class="section-header">About me</h2>
+    <div class="underline"></div>
+    <div class="portrait-wrapper">
+      <img class="portrait" src="./images/portrait_v2.jpg" alt="Portrait photo of me" />
     </div>
-    <ul class="links">
+    <div class="about-wrapper">
+      <div class="column1">
+        <h3>The beginning</h3>
+        <img src="./images/portrait_v2.jpg" alt="Portrait photo of me" />
+        <p>In September of 2016 I followed some friends' advice to try out some front-end coding. I loved it! The problem-solving mindset, the creativity and attention to detail it requires, and the rapid progress within technology suited me well. It turned out to be such a perfect match that I left a stable job in contracts management at a pharmaceutical company in April of 2017, to learn and practise front-end development full-time.</p>
+        <p class="new-p">Some months later, I got my first developer job as a JavaScript Engineer at an online casino company. After an overwhelming start that introduced several new technologies and concepts such as containerisation with Docker and Kubernetes, my interest and determination soon made the pieces fall into place bit by bit.</p>
+      </div> <!-- class="column1" -->
+      <div class="column2">
+        <h3>The present</h3>
+        <img src="./images/portrait_v2.jpg" alt="Portrait photo of me" />
+        <p>However, as adventurous outdoor enthusiasts, my partner and I had considered moving abroad to
+          the mountains for quite a while. Eventually we found a winner in Vancouver, Canada, and in June of 2019 we
+          left Stockholm and Sweden behind to begin a new chapter in our lives. I look forward to getting to know
+          Vancouver and taking another step towards becoming the best possible software developer I can be.</p>
+        <p class="new-p">Are you looking to hire?<a href="https://drive.google.com/file/d/1roayOwNlqxzUhr9Q_HEWQxM4vJKP7rlH/view?usp=sharing"
+            target="_blank" rel="noopener"> Download my resume</a> or<a href="#contact"> send me a message!</a> I'd love to see how I can contribute.</p>
+        <p class="new-p">When I'm not coding I'm likely out exploring the city and its surroundings,
+          solving crossword puzzles, out running, meeting friends or catching up with sport news.</p>
+      </div> <!-- class="column2" -->
+    </div> <!-- class="about-wrapper" -->
+  </section>
+
+  <section id="skills" class="container section" style="background-color:#ffffff">
+    <h2 class="section-header">Skills</h2>
+    <div class="underline"></div>
+    <div class="skills-wrapper">
+      <div class="skills-item">
+        <img class="skills-icon" src="./images/screen.svg" alt="Screen icon" />
+        <div class="skills-item-content">
+          <h3>Front-end technologies</h3>
+          <p>I regularly work with the latest features of HTML, CSS, JavaScript and React.js. When writing unit tests I
+            mainly use Jest, Enzyme, and Sinon. Other technologies that I am familiar with are Redux and GraphQL.</p>
+        </div>
+      </div> <!-- class="skills-item" -->
+      <div class="skills-item">
+        <img class="skills-icon" src="./images/server.svg" alt="Server icon" />
+        <div class="skills-item-content">
+          <h3>Back-end technologies</h3>
+          <p>I also have experience in developing and maintaining Node.js microservices. Either in combination with
+            Restify and CouchDB, or with Express.js and MongDB. For unit testing in Node.js, Mocha and Chai are my
+            standard.</p>
+        </div>
+      </div> <!-- class="skills-item" -->
+      <div class="skills-item">
+        <img class="skills-icon" src="./images/user.svg" alt="User icon" />
+        <div class="skills-item-content">
+          <h3>User-centricity</h3>
+          <p>As user perception and satisfaction are a constant focus in my work, I aim to build easy-to-use, fast and
+            functional web apps. Navigation and features should be intuitive and clear to the user right away.</p>
+        </div>
+      </div> <!-- class="skills-item" -->
+      <div class="skills-item">
+        <img class="skills-icon" src="./images/sitemap.svg" alt="Sitemap icon" />
+        <div class="skills-item-content">
+          <h3>Structure</h3>
+          <p>Based on user stories, I like to have an overview of a project in progress that anyone could follow. I seek
+            to write organised, clean code and document projects just enough to facilitate maintenance by other
+            developers not initially involved.</p>
+        </div>
+      </div> <!-- class="skills-item" -->
+      <div class="skills-item">
+        <img class="skills-icon" src="./images/magnifier.svg" alt="Magnifier icon" />
+        <div class="skills-item-content">
+          <h3>Thoroughness</h3>
+          <p>All aspects of a project or task are equally important to me. Whether it’s during implementation analysis,
+            coding, reviewing, testing, deploying, or solving issues arising along the way, I perform every step with
+            the same amount of care.</p>
+        </div>
+      </div> <!-- class="skills-item" -->
+      <div class="skills-item">
+        <img class="skills-icon" src="./images/communication.svg" alt="Communication icon" />
+        <div class="skills-item-content">
+          <h3>Communication</h3>
+          <p>Being pedagogical and able to see an issue from different perspectives, means I can help facilitate
+            communication between various roles in a cross-functional team as well as between the team and its
+            stakeholders.</p>
+        </div>
+      </div> <!-- class="skills-item" -->
+    </div> <!-- class="skills-wrapper" -->
+  </section>
+
+  <section id="projects" class="container section" style="background-color:#e6e6e6">
+    <h2 class="section-header">Projects</h2>
+    <div class="underline"></div>
+    <p style="text-align: center; margin: -50px 0 50px; color: #a6a6a6">More projects will be available soon.</p>
+
+    <div class="project-wrapper">
+      <div class="project">
+        <h3>Hiking Trails in Sweden</h3>
+        <div class="project-img-wrapper">
+          <img class="project-img" src="./images/trees.svg" alt="Trees icon to illustrate Hiking Trails in Sweden" />
+        </div>
+        <ul class="tags-container">
+          <li>React.js</li>
+          <li>React Router</li>
+          <li>Node.js</li>
+          <li>ES6 / Babel</li>
+          <li>Firebase</li>
+          <li>webpack</li>
+          <li>npm</li>
+          <li>Google Maps API</li>
+        </ul>
+        <div class="project-info">
+          <h3>Hiking Trails in Sweden</h3>
+          <p>A web app for planning hiking trips that is in progress. As a devoted hiker I noticed the lack of a website that provides both an overview of major Swedish hiking trails and practical information about them. The focus lately has been on refactoring old code and implementing server side rendering. Hence the app currently includes only a few trails, and has temporary content and design. Last update September 2019.
+          </p>
+          <a href="https://us-central1-hiking-sweden.cloudfunctions.net/ssr" target="_blank" rel="noopener">
+            <div class="project-btn">View project</div>
+          </a>
+        </div> <!-- class="project-info" -->
+      </div> <!-- class="project" -->
+    </div> <!-- class="project-wrapper" -->
+
+  </section>
+
+  <section id="contact" class="container section" style="background-color:#ffffff">
+    <h2 class="section-header">Get in touch</h2>
+    <div class="underline"></div>
+    <form class="form" action="https://formspree.io/hedeliningrid@gmail.com" method="post" novalidate>
+      <div class="form-row">
+        <div class="row-item">
+          <label for="name">Name*</label>
+          <input type="text" id="name" name="name">
+          <span class="error-name" aria-live="polite"></span>
+        </div>
+        <div class="row-item">
+          <label for="email">E-mail address*</label>
+          <input type="email" id="email" name="_replyto">
+          <span class="error-email" aria-live="polite"></span>
+        </div>
+      </div>
+      <label for="message">Message*</label>
+      <textarea name="message" id="message"></textarea>
+      <span class="error-msg" aria-live="polite"></span>
+      <button type="submit" class="submit">Send Message</button>
+    </form>
+    <ul class="social">
       <li>
         <a href="mailto:hedeliningrid@gmail.com">
-          <img class="icon" src="./images/email.svg" alt="Email icon" />
+          <img class="social-icon" src="./images/email.svg" alt="Email icon" />
         </a>
       </li>
       <li>
         <a href="https://github.com/vocado78" target="_blank" rel="noopener">
-          <img class="icon" src="./images/github.svg" alt="Github icon" />
+          <img class="social-icon" src="./images/github.svg" alt="Github icon" />
         </a>
       </li>
       <li>
         <a href="https://www.linkedin.com/in/ingridhedelin" target="_blank" rel="noopener">
-          <img class="icon" src="./images/linkedin.svg" alt="Linkedin icon" />
+          <img class="social-icon" src="./images/linkedin.svg" alt="Linkedin icon" />
         </a>
       </li>
-    </ul>
-    <div class="footer">
+    </ul> <!-- class="social" -->
+  </section>
+
+  <footer>
+    <div>
       <p>&#169; 2019 www.ingridhedelin.com</p>
     </div>
-  </div>
+  </footer>
 </body>
 
 </html>
