@@ -81,7 +81,7 @@ h1, h2, h3, .banner-text p {
 }
 
 .banner {
-  height: 100vh;
+  height: 90vh;
   background-image: url("./images/banner-medium.jpg");
   background-position: center, center;
   background-repeat: no-repeat;
