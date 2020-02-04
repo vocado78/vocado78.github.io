@@ -81,7 +81,7 @@ h1, h2, h3, .banner-text p {
 }
 
 .banner {
-  height: 100vh;
+  height: 90vh;
   background-image: url("./images/banner-medium.jpg");
   background-position: center, center;
   background-repeat: no-repeat;
@@ -557,7 +557,7 @@ footer div p:first-of-type {
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
     width: 50%;
-    text-align: justify;
+    text-align: right;
     margin-left: 16px;
     -webkit-transform: translateX(100vw);
             transform: translateX(100vw);
@@ -580,6 +580,7 @@ footer div p:first-of-type {
         -ms-flex-align: start;
             align-items: flex-start;
     padding: 0 0 0 1.5em;
+    text-align: left;
   }
   .skills-item:nth-child(2n) {
     -webkit-box-orient: horizontal;
