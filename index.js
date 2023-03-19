@@ -72,6 +72,10 @@ const callback = () => {
     const errorEmail = document.getElementsByClassName("error-email")[0];
     const errorMsg = document.getElementsByClassName("error-msg")[0];
     const emailRegEx = /^([0-9a-zA-Z]([.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$/;
+
+    errorName.innerHTML = "";
+    errorEmail.innerHTML = "";
+    errorMsg.innerHTML = "";
     
     if (name.value.length === 0 || name.value.length > 101) {
       errorName.innerHTML = "Please enter your name. The name field is required and can have a maximum of 100 characters.";

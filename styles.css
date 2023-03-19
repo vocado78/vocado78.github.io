@@ -199,8 +199,7 @@ h1, h2, h3, .banner-text p {
   margin-top: 2rem;
 }
 
-.about-wrapper a, .project-info a {
-  text-decoration: none;
+.about-wrapper a {
   color: #770f8a;
 }
 
@@ -273,7 +272,7 @@ h1, h2, h3, .banner-text p {
 .form input, .form textarea {
   margin: 0.3rem 0 0.6rem 0;
   font-size: 1em;
-  padding: 0.3rem;
+  padding: 0.75rem;
   border: none;
   border-radius: 2px;
   background-color: #e6e6e6;
